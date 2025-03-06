@@ -10,29 +10,36 @@
     <header>
         <h1>Welcome to My Portfolio</h1>
     </header>
+
     <section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I'm <strong>Terence Boyce</strong>, an experienced IT professional with a background in software engineering, technical support, and network maintenance.
-       With a strong foundation in computer science and hands-on expertise in troubleshooting, problem-solving, and system management,
-       I am passionate about leveraging technology to create innovative solutions.</p>
+        <h2>About Me</h2>
+        <p>Hello! I'm <strong>Terence Boyce</strong>, an experienced IT professional with a background in software engineering, technical support, and network maintenance.
+           With a strong foundation in computer science and hands-on expertise in troubleshooting, problem-solving, and system management,
+           I am passionate about leveraging technology to create innovative solutions.</p>
 
-    <p>I am currently pursuing a <strong>Master of Science in IT-Software Engineering</strong> at the University of Maryland Global Campus,
-       following my <strong>Bachelor of Science in Computer Science</strong>. My academic journey has equipped me with expertise in
-       <em>networking, cybersecurity, database management, and programming (C, C++, Python)</em>.</p>
+        <p>I am currently pursuing a <strong>Master of Science in IT-Software Engineering</strong> at the University of Maryland Global Campus,
+           following my <strong>Bachelor of Science in Computer Science</strong>. My academic journey has equipped me with expertise in
+           <em>networking, cybersecurity, database management, and programming (C, C++, Python)</em>.</p>
 
-    <p>Over the years, I have honed my technical and analytical skills through my work at Comcast as a
-       <strong>Help Desk Technician and Maintenance Technician</strong>. I specialize in diagnosing and resolving IT-related issues,
-       optimizing system performance, and ensuring smooth operations in enterprise environments.</p>
+        <p>Over the years, I have honed my technical and analytical skills through my work at Comcast as a
+           <strong>Help Desk Technician and Maintenance Technician</strong>. I specialize in diagnosing and resolving IT-related issues,
+           optimizing system performance, and ensuring smooth operations in enterprise environments.</p>
 
-    <p>Beyond my professional work, I have contributed to multiple projects, including developing a secure Python-based application,
-       designing a 2D platformer game, and building IT knowledge bases to enhance support efficiency.</p>
+        <p>Beyond my professional work, I have contributed to multiple projects, including developing a secure Python-based application,
+           designing a 2D platformer game, and building IT knowledge bases to enhance support efficiency.</p>
 
-    <p>If you're looking for a **problem-solver, innovator, and dedicated IT professional**,
-       feel free to explore my <a href="{{ url_for('resume') }}">resume</a> or <a href="#contact">contact me</a>!</p>
-</section>
+        <p>If you're looking for a <strong>problem-solver, innovator, and dedicated IT professional</strong>,
+           feel free to explore my <a href="{{ url_for('resume') }}">resume</a> or <a href="#contact">contact me</a>!</p>
+    </section>
+
+    <!-- Dean's List Certificate Section -->
+    <section id="deans-list">
+        <h2>Dean's List Certificate</h2>
+        <img src="{{ url_for('static', filename='DeansList.png') }}" alt="Dean's List Certificate" width="80%">
+    </section>
 
     <footer>
-        <p>Contact: tbizz46@gmail.com</p>
+        <p>Contact: <a href="mailto:tbizz46@gmail.com">tbizz46@gmail.com</a></p>
     </footer>
 </body>
 </html>
