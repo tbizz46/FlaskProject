@@ -1,6 +1,8 @@
 from flask import Flask, render_template
+import os
 
-app = Flask(__name__)
+# Explicitly set the templates directory
+app = Flask(__name__, template_folder=os.path.abspath("templates"))
 
 @app.route('/')
 def home():
@@ -8,7 +10,7 @@ def home():
 
 @app.route('/resume')
 def resume():
-    return render_template('resume.html')
+    return render_template('resume.html')  # Ensure the filename matches exactly
 
 if __name__ == '__main__':
     app.run(debug=True)
