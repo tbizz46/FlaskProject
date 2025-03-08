@@ -9,21 +9,22 @@
             font-family: Arial, sans-serif;
             margin: 40px;
             background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
         }
         .container {
-            max-width: 800px;
+            display: flex;
+            max-width: 1200px;
             background: white;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            display: flex;
-            justify-content: space-between;
         }
         .resume-content {
             width: 60%;
         }
         .degree-image {
-            width: 35%;
+            width: 40%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -51,7 +52,7 @@
 </head>
 <body>
     <div class="container">
-        <!-- Resume Text -->
+        <!-- Resume Content on the Left -->
         <div class="resume-content">
             <h1>Terence Boyce</h1>
             <p><strong>Phone:</strong> (443) 391-6617 | <strong>Email:</strong>
@@ -101,9 +102,9 @@
             </div>
         </div>
 
-        <!-- Bachelor's Degree Image -->
+        <!-- Bachelor's Degree Image on the Right -->
         <div class="degree-image">
-            <img src="{{ url_for('static', filename='Bachelors.jpg') }}" alt="Bachelor's Degree">
+            <img src="static/Bachelors.jpg" alt="Bachelor's Degree">
         </div>
     </div>
 </body>
