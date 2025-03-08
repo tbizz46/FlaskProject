@@ -18,13 +18,11 @@ section {
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    max-width: 600px;  /* Adjust this width as needed */
+    margin: 0 auto;  /* Centers the footer */
+    padding: 5px 0;  /* Reduces padding */
+    font-size: 14px;  /* Adjust font size if needed */
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
 
 .resume-container {
