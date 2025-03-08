@@ -16,6 +16,24 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+        }
+        .resume-content {
+            width: 60%;
+        }
+        .degree-image {
+            width: 35%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .degree-image img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
         }
         h1, h2 {
             color: #333;
@@ -33,83 +51,60 @@
 </head>
 <body>
     <div class="container">
-        <h1>Terence Boyce</h1>
-        <p><strong>Phone:</strong> (443) 391-6617 | <strong>Email:</strong> <a href="mailto:tbizz46@comcast.net">tbizz46@comcast.net</a></p>
+        <!-- Resume Text -->
+        <div class="resume-content">
+            <h1>Terence Boyce</h1>
+            <p><strong>Phone:</strong> (443) 391-6617 | <strong>Email:</strong>
+                <a href="mailto:tbizz46@comcast.net">tbizz46@comcast.net</a></p>
 
-        <div class="section">
-            <h2>Education</h2>
-            <p><strong>University of Maryland Global Campus, Adelphi, MD</strong> - Expected May 2028<br>
-            <em>Master of Science (M.S.), IT-Software Engineering</em></p>
-            <p><strong>University of Maryland Global Campus, Adelphi, MD</strong> - December 2024<br>
-            <em>Bachelor of Science (B.S.), Computer Science</em> (Dean’s List, Summer 2023)</p>
-            <p><strong>Community College of Baltimore County, Essex, MD</strong> - May 2002<br>
-            <em>Associate of Arts (A.A.), Computer Information Systems</em></p>
+            <div class="section">
+                <h2>Education</h2>
+                <p><strong>University of Maryland Global Campus, Adelphi, MD</strong> - Expected May 2028<br>
+                <em>Master of Science (M.S.), IT-Software Engineering</em></p>
+                <p><strong>University of Maryland Global Campus, Adelphi, MD</strong> - December 2024<br>
+                <em>Bachelor of Science (B.S.), Computer Science</em> (Dean’s List, Summer 2023)</p>
+                <p><strong>Community College of Baltimore County, Essex, MD</strong> - May 2002<br>
+                <em>Associate of Arts (A.A.), Computer Information Systems</em></p>
+            </div>
+
+            <div class="section">
+                <h2>Work Experience</h2>
+                <p><strong>Comcast, Baltimore, MD</strong> - Help Desk Technician (Dec 2009 - Sep 2024)</p>
+                <ul>
+                    <li>Provided Tier 1 & Tier 2 support for hardware, software, network, and account issues.</li>
+                    <li>Managed tickets in ServiceNow and escalated complex issues.</li>
+                    <li>Developed troubleshooting SOPs, improving resolution efficiency by 25%.</li>
+                    <li>Implemented network & security updates with engineers.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Projects & Hands-On Experience</h2>
+                <ul>
+                    <li>Developed an IT support knowledge base, reducing average resolution time by 20%.</li>
+                    <li>Created a Python-based secure application with authentication & encryption.</li>
+                    <li>Designed & programmed a 2D platformer game with UI/UX optimizations.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Certifications</h2>
+                <ul>
+                    <li>COBOL Certification – Enterprise Systems</li>
+                    <li>LinkedIn Certification – Prompt Engineering & AI Agents with ChatGPT</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Skills</h2>
+                <p>Problem-Solving | Critical Thinking | User Training & Support | Data Analysis | Remote IT Support</p>
+            </div>
         </div>
 
-        <div class="section">
-            <h2>Work Experience</h2>
-            <p><strong>Comcast, Baltimore, MD</strong> - Help Desk Technician (Dec 2009 - Sep 2024)</p>
-            <ul>
-                <li>Provided Tier 1 & Tier 2 support for hardware, software, network, and account issues.</li>
-                <li>Managed tickets in ServiceNow and escalated complex issues.</li>
-                <li>Developed troubleshooting SOPs, improving resolution efficiency by 25%.</li>
-                <li>Implemented network & security updates with engineers.</li>
-            </ul>
-
-            <p><strong>Comcast, Baltimore, MD</strong> - Maintenance Technician (Dec 2009 - Sep 2024)</p>
-            <ul>
-                <li>Diagnosed and resolved network outages, reducing downtime by 30%.</li>
-                <li>Utilized remote monitoring tools for real-time support.</li>
-                <li>Led root cause analysis and trained junior technicians.</li>
-            </ul>
-
-            <p><strong>Comcast, Baltimore, MD</strong> - Customer Account Executive (Jan 2009 - Dec 2009)</p>
-            <ul>
-                <li>Helped customers troubleshoot Microsoft products and service issues.</li>
-                <li>Managed incident logging and escalations.</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Projects & Hands-On Experience</h2>
-            <ul>
-                <li>Developed an IT support knowledge base, reducing average resolution time by 20%.</li>
-                <li>Created a Python-based secure application with authentication & encryption.</li>
-                <li>Designed & programmed a 2D platformer game with UI/UX optimizations.</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Certifications</h2>
-            <ul>
-                <li>COBOL Certification – Enterprise Systems</li>
-                <li>LinkedIn Certification – Prompt Engineering & AI Agents with ChatGPT</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Skills</h2>
-            <p>Problem-Solving | Critical Thinking | User Training & Support | Data Analysis | Remote IT Support</p>
+        <!-- Bachelor's Degree Image -->
+        <div class="degree-image">
+            <img src="{{ url_for('static', filename='Bachelors.jpg') }}" alt="Bachelor's Degree">
         </div>
     </div>
-
-<div class="resume-container">
-    <div class="resume-content">
-        <h1>Terence Boyce</h1>
-        <p><strong>Phone:</strong> (443) 391-6617 | <strong>Email:</strong>
-            <a href="mailto:tbizz46@comcast.net">tbizz46@comcast.net</a></p>
-
-        <h2>Education</h2>
-        <p><strong>University of Maryland Global Campus, Adelphi, MD</strong> - December 2024</p>
-        <p><em>Bachelor of Science (B.S.), Computer Science (Dean’s List, Summer 2023)</em></p>
-
-        <!-- Other resume sections -->
-    </div>
-
-    <!-- Bachelor's Degree Image -->
-    <div class="degree-image">
-        <img src="{{ url_for('static', filename='Bachelors.jpg') }}" alt="Bachelor's Degree">
-    </div>
-</div>
 </body>
 </html>
